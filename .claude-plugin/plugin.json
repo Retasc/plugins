@@ -1,0 +1,29 @@
+{
+  "name": "retasc",
+  "displayName": "Retasc",
+  "version": "1.0.1",
+  "description": "Retasc is a work queue for AI coding agents. The next agent picks up where the last one stopped. Your chat writes what you decide into issues.",
+  "author": {
+    "name": "Retasc",
+    "email": "support@retasc.com",
+    "url": "https://retasc.com"
+  },
+  "homepage": "https://retasc.com",
+  "repository": "https://github.com/Retasc/plugins",
+  "keywords": [
+    "work queue for ai coding agents",
+    "claude code handoff",
+    "issue tracker for ai coding agents",
+    "mcp server",
+    "claude code multiple agents",
+    "claude code",
+    "codex",
+    "cursor"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://docs.retasc.com",
+  "supportUrl": "https://docs.retasc.com",
+  "privacyPolicyUrl": "https://retasc.com/privacy",
+  "termsOfServiceUrl": "https://retasc.com/terms",
+  "license": "MIT"
+}

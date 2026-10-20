@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "retasc": {
+      "type": "http",
+      "url": "https://mcp.retasc.com/mcp"
+    }
+  }
+}
