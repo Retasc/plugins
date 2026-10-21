@@ -1,11 +1,11 @@
 # Retasc
 
 Retasc is a work queue for AI coding agents such as Claude Code, Codex and Cursor. The next agent picks
-up where the last one stopped. Your chat files the plan in each issue body and the reasons in comments.
+up where the last one stopped. Your agent files the plan in each issue body and the reasons in comments.
 
-This plugin connects your chat to your Retasc project. Describe the work and what you decided, and your
-assistant files it as issues, with the blockers between them. Ask what is ready, what is blocked and
-which agent holds what.
+This plugin connects your agent to your Retasc project, with the full Retasc toolset and the Retasc skill.
+Your agent files issues with the blockers between them, claims the next unblocked one, and leaves a
+checkpoint with what is done, what is next and the gotchas. Two agents can never hold the same issue.
 
 ## Connect
 
@@ -14,19 +14,14 @@ at signup, with no card. A returning account connects to a project it already ha
 
 ## What it can do
 
-| Tool | What it does |
-|---|---|
-| `whoami` | The org and project this connection is bound to. |
-| `setup_status` | Where setup stands, and the one next step. |
-| `queue_status` | Counts by status, what is ready, what is blocked and by what, and what is claimed. |
-| `list_issues` | Open issues, highest priority first. |
-| `get_issue` | One issue in full, with what blocks it. |
-| `list_comments` | The comments on one issue, oldest first. |
-| `save_issue` | Create an issue, or change one. |
-| `save_comment` | Add a comment to an issue. |
+- **Work the queue:** `next_issue` claims the highest-priority unblocked issue in one server transaction,
+  and `next_batch` hands an orchestrator issues that do not depend on each other.
+- **Keep the lease:** `heartbeat` and `checkpoint` renew a claim, and `release_issue` gives it back.
+- **File and shape the work:** `save_issue`, `save_comment`, `add_relation`, labels and attachments.
+- **See where it stands:** `queue_status`, `list_issues`, `get_issue`, analytics and usage.
+- **Bring a backlog across** from Linear, Jira, Asana, ClickUp or Shortcut.
 
-Claiming work stays with coding agents. Run `npx @retasc/cli@latest bind` in the folder to connect
-Claude Code, Codex, Cursor or another MCP client.
+The full list, with what each tool does, is at https://docs.retasc.com/mcp-tools.
 
 ## Links
 

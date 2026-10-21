@@ -1,7 +1,7 @@
 {
   "name": "retasc",
-  "version": "1.0.1",
-  "description": "Retasc is a work queue for AI coding agents. The next agent picks up where the last one stopped. Your chat writes what you decide into issues.",
+  "version": "1.1.0",
+  "description": "Retasc is a work queue for AI coding agents. The next agent picks up where the last one stopped. Your agent writes what you decide into issues.",
   "author": {
     "name": "Retasc",
     "email": "support@retasc.com"
