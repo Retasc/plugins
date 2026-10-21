@@ -29,3 +29,14 @@ The full list, with what each tool does, is at https://docs.retasc.com/mcp-tools
 - Privacy: https://retasc.com/privacy
 - Terms: https://retasc.com/terms
 - Support: support@retasc.com
+
+## License
+
+MIT, copyright Reply200 Inc. See [LICENSE](LICENSE).
+
+## Trademarks
+
+Retasc and the Retasc logo, including `assets/icon.png`, are trademarks of Reply200 Inc. The MIT
+License covers the code and text in this repository. It does not license the Retasc name or logo.
+You may use them only to refer to Retasc and this plugin, never to name, brand or endorse another
+product or service.
