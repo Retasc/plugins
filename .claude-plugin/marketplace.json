@@ -1,0 +1,17 @@
+{
+  "name": "retasc",
+  "owner": {
+    "name": "Retasc",
+    "email": "support@retasc.com"
+  },
+  "metadata": {
+    "description": "This marketplace contains Retasc's plugin, which carries the Retasc MCP server connection and the Retasc skill."
+  },
+  "plugins": [
+    {
+      "name": "retasc",
+      "source": "./",
+      "description": "Retasc is a work queue for AI coding agents. The next agent picks up where the last one stopped. Your agent writes what you decide into issues."
+    }
+  ]
+}

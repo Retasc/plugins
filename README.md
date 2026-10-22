@@ -9,7 +9,14 @@ checkpoint with what is done, what is next and the gotchas. Two agents can never
 
 ## Connect
 
-Install the plugin and connect Retasc. You sign in with GitHub or Google. A new org gets $10 of usage
+In Claude Code:
+
+```
+/plugin install retasc --marketplace Retasc/plugins
+```
+
+The plugin sends your agent's Retasc calls to Retasc's MCP server at `https://mcp.retasc.com/mcp`.
+You sign in with GitHub or Google. A new org gets $10 of usage
 at signup, with no card. A returning account connects to a project it already has.
 
 ## What it can do
